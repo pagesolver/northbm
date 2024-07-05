@@ -7,43 +7,43 @@ export const portfolio = [
     },
     {
       title: "Landscaping and Patio Work",
-      description: "Transformation of a backyard area with new pavers and garden beds.",
+      description: "Addition of a backyard area with new pavers and garden beds.",
       beforeSrc: "/b1.jpg",
       afterSrc: "/b2.jpg"
     },
     {
-      title: "Title",
-      description: "Description",
+      title: "Staircase Renovation and Painting",
+      description: "Transformation of an exterior wooden staircase with fresh paint and refinishing.",
       beforeSrc: "/c1.jpg",
       afterSrc: "/c2.jpg"
     },
     {
-      title: "Title",
-      description: "Description",
+      title: "Deck Restoration and Refinishing",
+      description: "Revitalization of a poolside wooden deck through cleaning, sanding, and staining.",
       beforeSrc: "/d1.jpg",
       afterSrc: "/d2.jpg"
     },
     {
-      title: "Title",
-      description: "Description",
+      title: "Fence Replacement Project",
+      description: "Installation of a property boundary with installation of a new metal fence",
       beforeSrc: "/e1.jpg",
       afterSrc: "/e2.jpg"
     },
     {
-      title: "Title",
-      description: "Description",
+      title: "Patio Cover Installation",
+      description: "Construction of a new patio cover, transforming an open concrete area into a sheltered outdoor living space.",
       beforeSrc: "/f1.jpg",
       afterSrc: "/f2.jpg"
     },
     {
-      title: "Title",
-      description: "Description",
+      title: "Bathroom Renovation",
+      description: "Complete transformation of an outdated bathroom, including new tiling, fixtures, and shower enclosure for a modern, clean look.",
       beforeSrc: "/g1.jpg",
       afterSrc: "/g2.jpg"
     },
     {
-      title: "Title",
-      description: "Description",
+      title: "Outdoor Deck Installation",
+      description: "Transformation of a bare concrete patio into a beautiful wooden deck, enhancing the outdoor living space and adding warmth to the area.",
       beforeSrc: "/h1.jpg",
       afterSrc: "/h2.jpg"
     }
