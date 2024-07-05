@@ -63,7 +63,7 @@ export default function Page() {
 
       <section id="contact" className="mb-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
-        <p className="text-gray-600 mb-4">Fill out the form below and we'll get back to you as soon as possible. Otherwise, contact us via phone or facebook.</p>
+        <p className="text-gray-600 mb-4">Fill out the form below and we&apos;ll get back to you as soon as possible. Otherwise, contact us via phone or facebook.</p>
         {/* Add your contact form here */}
       </section>
       </>
