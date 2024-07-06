@@ -45,7 +45,7 @@ const BeforeAfter: React.FC<BeforeAfterProps> = ({ title, description, beforeSrc
 export default function Page() {
     return (
         <>
-            <h1 className="text-3xl font-bold text-gray-900">Our Work</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h1>
             <Link href="/" className="text-blue-600 hover:text-blue-800 mb-6 inline-block">
                 &larr; Back to Home
             </Link>

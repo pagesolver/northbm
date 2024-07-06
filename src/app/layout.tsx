@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { LocalBusinessJsonLd, NextSeo } from "next-seo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +23,9 @@ export const metadata: Metadata = {
       }
     ],
     siteName: "North Brisbane Maintenance"
+  },
+  twitter: {
+    card: 'summary_large_image'
   }
 };
 
@@ -40,7 +42,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-100 flex flex-col">
           <Header />
-          <main className="max-w-screen-xl container py-6 space-y-6 flex-grow">{children}</main>
+          <main className="max-w-screen-xl container py-6 flex-grow">{children}</main>
           <Footer />
         </div>
       </body>
