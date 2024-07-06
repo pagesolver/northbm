@@ -17,7 +17,7 @@ export default function Header() {
         <nav className="flex-grow">
           <ul className="flex space-x-2 sm:space-x-4 justify-end">
             <li><Link href="/our-work" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">Portfolio</Link></li>
-            <li><Link href="/#about" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">About</Link></li>
+            <li><Link href="/" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">About</Link></li>
             <li><Link href="/#contact" className="text-gray-600 hover:text-gray-900 text-sm sm:text-base">Contact</Link></li>
           </ul>
         </nav>
