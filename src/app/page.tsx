@@ -55,11 +55,11 @@ export default function Page() {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">"North Brisbane Maintenance did an excellent job on our deck. Professional, punctual, and great attention to detail!"</p>
+            <p className="text-gray-600 italic">&quot;North Brisbane Maintenance did an excellent job on our deck. Professional, punctual, and great attention to detail!&quot;</p>
             <footer className="text-gray-800 font-semibold">- Petrie Client</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">"I'm extremely satisfied with the bathroom renovation. They were courteous, clean, and finished on time. Highly recommended!"</p>
+            <p className="text-gray-600 italic">&quot;I&apos;m extremely satisfied with the bathroom renovation. They were courteous, clean, and finished on time. Highly recommended!&quot;</p>
             <footer className="text-gray-800 font-semibold">- Bribie Island Client</footer>
           </blockquote>
         </div>
