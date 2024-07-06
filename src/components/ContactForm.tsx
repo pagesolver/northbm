@@ -7,7 +7,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xdknoylr");
 
   if (state.succeeded) {
-    return <p className="text-green-600">Thanks for your inquiry! We'll get back to you soon.</p>;
+    return <p className="text-green-600">Thanks for your inquiry! We&apos;ll get back to you soon.</p>;
   }
 
   return (
