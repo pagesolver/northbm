@@ -50,7 +50,7 @@ export default function Page() {
                 Experience the professional alternative to DIY with Brent and Joe, your trusted experts based on beautiful Bribie Island. Serving Northside Brisbane and surrounding local areas, for many years, we bring a wealth of experience and knowledge to every project.
               </p>
               <p className="text-lg text-gray-600 mb-4">
-                We are committed to delivering high-quality work with exceptional communication and reliable service. Punctuality is our priority—if there's ever a change in plans, you'll be the first to know. We keep you informed at every stage, ensuring smooth and hassle-free project management.
+                We are committed to delivering high-quality work with exceptional communication and reliable service. Punctuality is our priority—if there&apos;s ever a change in plans, you&apos;ll be the first to know. We keep you informed at every stage, ensuring smooth and hassle-free project management.
               </p>
               <p className="text-lg text-gray-600 mb-4">
                 Our rates are honest and transparent, providing you with the best value. Contact us for a friendly chat about your project needs!
@@ -86,11 +86,11 @@ export default function Page() {
             <footer className="text-gray-800 font-semibold">- Gary (Bribie Island Client)</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;I recently hired North Brisbane Maintenance for some home maintenance tasks, and I couldn't be happier with the results. They were professional, efficient, and incredibly thorough. Every detail was taken care of, and they ensured everything was completed with the least amount of fuss. Excellent service all around!&quot;</p>
+            <p className="text-gray-600 italic">&quot;I recently hired North Brisbane Maintenance for some home maintenance tasks, and I couldn&apos;t be happier with the results. They were professional, efficient, and incredibly thorough. Every detail was taken care of, and they ensured everything was completed with the least amount of fuss. Excellent service all around!&quot;</p>
             <footer className="text-gray-800 font-semibold">- Samantha (Deception Bay Client)</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;I recently had our entire house painted inside by North Brisbane Maintenance, and the results are fantastic! The team was professional, punctual, and meticulous. The communication throughout the project was excellent, and they left our home clean and tidy. We couldn't be happier with their work and highly recommend their services.&quot;</p>
+            <p className="text-gray-600 italic">&quot;I recently had our entire house painted inside by North Brisbane Maintenance, and the results are fantastic! The team was professional, punctual, and meticulous. The communication throughout the project was excellent, and they left our home clean and tidy. We couldn&apos;t be happier with their work and highly recommend their services.&quot;</p>
             <footer className="text-gray-800 font-semibold">- Brett (Caboolture Client)</footer>
           </blockquote>
         </div>
