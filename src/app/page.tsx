@@ -47,7 +47,7 @@ export default function Page() {
           <div className="flex flex-col justify-between h-full">
             <div>
               <p className="text-lg text-gray-600 mb-4">
-                Experience the professional alternative to DIY with Brent and Joe, your trusted experts based on beautiful Bribie Island. Serving Northside Brisbane and surrounding local areas, for many years, we bring a wealth of experience and knowledge to every project.
+                Experience the professional alternative to DIY with Brent and jo, your trusted experts based on beautiful Bribie Island. Serving Northside Brisbane and surrounding local areas, for many years, we bring a wealth of experience and knowledge to every project.
               </p>
               <p className="text-lg text-gray-600 mb-4">
                 We are committed to delivering high-quality work with exceptional communication and reliable service. Punctuality is our priority—if there&apos;s ever a change in plans, you&apos;ll be the first to know. We keep you informed at every stage, ensuring smooth and hassle-free project management.
@@ -65,10 +65,10 @@ export default function Page() {
               <Image src="/brent.jpg" alt="Brent" fill className="rounded-lg object-cover" />
             </div>
             <div className="relative w-full pt-[75%]">
-              <Image src="/joe.jpg" alt="Joe" fill className="rounded-lg object-cover" />
+              <Image src="/jo.jpg" alt="jo" fill className="rounded-lg object-cover" />
             </div>
-            <div className="relative w-full pt-[56.25%] col-span-2">
-              <Image src="/collective.jpg" alt="Brent and Joe" fill className="rounded-lg object-cover" />
+            <div className="relative w-full col-span-2">
+              <Image src="/collective.jpg" alt="Brent and jo" fill className="rounded-lg object-cover" />
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Page() {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;I am absolutely thrilled with my bathroom renovation! Brent and Joe were courteous and clean, and they finished the job right on time. Their communication was exceptional throughout the entire process, making me feel completely safe in their hands. I highly recommend their services!&quot;</p>
+            <p className="text-gray-600 italic">&quot;I am absolutely thrilled with my bathroom renovation! Brent and jo were courteous and clean, and they finished the job right on time. Their communication was exceptional throughout the entire process, making me feel completely safe in their hands. I highly recommend their services!&quot;</p>
             <footer className="text-gray-800 font-semibold">- Belinda (Bribie Island Client)</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
