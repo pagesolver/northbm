@@ -50,7 +50,7 @@ export default function Page() {
                 Experience the professional alternative to DIY with Brent and Jo, your trusted experts based on beautiful Bribie Island. Serving Northside Brisbane and surrounding local areas, for many years, we bring a wealth of experience and knowledge to every project.
               </p>
               <p className="text-lg text-gray-600 mb-4">
-                We are committed to delivering high-quality work with exceptional communication and reliable service. Punctuality is our priority—if there&apos;s ever a change in plans, you&apos;ll be the first to know. We keep you informed at every stage, ensuring smooth and hassle-free project management.
+                We are committed to delivering high-quality work with exceptional communication and reliable service. Communication is our priority—if there&apos;s ever a change in plans, you&apos;ll be the first to know. We keep you informed at every stage, ensuring smooth and hassle-free project management.
               </p>
               <p className="text-lg text-gray-600 mb-4">
                 Our rates are honest and transparent, providing you with the best value. Contact us for a friendly chat about your project needs!
@@ -67,7 +67,7 @@ export default function Page() {
             <div className="relative w-full pt-[75%]">
               <Image src="/jo.jpg" alt="Jo" fill className="rounded-lg object-cover" />
             </div>
-            <div className="relative w-full col-span-2">
+            <div className="relative w-full pt-[50%] col-span-2">
               <Image src="/collective.jpg" alt="Brent and Jo" fill className="rounded-lg object-cover" />
             </div>
           </div>
