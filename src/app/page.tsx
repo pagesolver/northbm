@@ -78,20 +78,20 @@ export default function Page() {
         <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;I am absolutely thrilled with my bathroom renovation! Brent and Jo were courteous and clean, and they finished the job right on time. Their communication was exceptional throughout the entire process, making me feel completely safe in their hands. I highly recommend their services!&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Belinda (Bribie Island Client)</footer>
+            <p className="text-gray-600 italic">&quot;Wow! My bathroom looks amazing now. Brent & Jo were so nice and tidy. They finished right on time too. Felt totally safe with them in my house. 5 stars!&quot;</p>
+            <footer className="text-gray-800 font-semibold">- Belinda, Bribie Island</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;North Brisbane Maintenance did an excellent job on our deck. Professional, punctual, and great attention to detail!&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Gary (Bribie Island Client)</footer>
+            <p className="text-gray-600 italic">&quot;Top notch job on our deck!! These guys know their stuff. On time, professional, and boy do they pay attention to the little things. Couldn't be happier.&quot;</p>
+            <footer className="text-gray-800 font-semibold">- Gary, Bribie</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;I recently hired North Brisbane Maintenance for some home maintenance tasks, and I couldn&apos;t be happier with the results. They were professional, efficient, and incredibly thorough. Every detail was taken care of, and they ensured everything was completed with the least amount of fuss. Excellent service all around!&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Samantha (Deception Bay Client)</footer>
+            <p className="text-gray-600 italic">&quot;Got these folks for some odd jobs around the house. They were quick, knew exactly what to do, and didn't leave a mess. No complaints here!&quot;</p>
+            <footer className="text-gray-800 font-semibold">- Sam, Deception Bay</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;I recently had our entire house painted inside by North Brisbane Maintenance, and the results are fantastic! The team was professional, punctual, and meticulous. The communication throughout the project was excellent, and they left our home clean and tidy. We couldn&apos;t be happier with their work and highly recommend their services.&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Brett (Caboolture Client)</footer>
+            <p className="text-gray-600 italic">&quot;Just had my whole house painted inside. It looks fab! The team was great - always on time and kept me in the loop. House was spotless when they finished. Thumbs up from me!&quot;</p>
+            <footer className="text-gray-800 font-semibold">- Brett, Caboolture</footer>
           </blockquote>
         </div>
       </section>
