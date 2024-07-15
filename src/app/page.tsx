@@ -82,11 +82,11 @@ export default function Page() {
             <footer className="text-gray-800 font-semibold">- Belinda, Bribie Island</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;Top notch job on our deck!! These guys know their stuff. On time, professional, and boy do they pay attention to the little things. Couldn't be happier.&quot;</p>
+            <p className="text-gray-600 italic">&quot;Top notch job on our deck!! These guys know their stuff. On time, professional, and boy do they pay attention to the little things. Couldn&apos;t be happier.&quot;</p>
             <footer className="text-gray-800 font-semibold">- Gary, Bribie</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;Got these folks for some odd jobs around the house. They were quick, knew exactly what to do, and didn't leave a mess. No complaints here!&quot;</p>
+            <p className="text-gray-600 italic">&quot;Got these folks for some odd jobs around the house. They were quick, knew exactly what to do, and didn&apos;t leave a mess. No complaints here!&quot;</p>
             <footer className="text-gray-800 font-semibold">- Sam, Deception Bay</footer>
           </blockquote>
           <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
