@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import { Facebook, Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { testimonials } from "@/testimonials";
 
 export default function Page() {
   return (
@@ -47,7 +48,7 @@ export default function Page() {
           <div className="flex flex-col justify-between h-full">
             <div>
               <p className="text-lg text-gray-600 mb-4">
-                Experience the professional alternative to DIY with Brent and Jo, your trusted experts based on beautiful Bribie Island. Serving Northside Brisbane and surrounding local areas, for many years, we bring a wealth of experience and knowledge to every project.
+                Experience the professional alternative to DIY with Brent and Jo, based on beautiful Bribie Island. Serving Northside Brisbane and surrounding local areas, for many years, we bring a wealth of experience and knowledge to every project.
               </p>
               <p className="text-lg text-gray-600 mb-4">
                 We are committed to delivering high-quality work with exceptional communication and reliable service. Communication is our priority—if there&apos;s ever a change in plans, you&apos;ll be the first to know. We keep you informed at every stage, ensuring smooth and hassle-free project management.
@@ -77,22 +78,12 @@ export default function Page() {
       <section id="testimonials" className="mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;Wow! My bathroom looks amazing now. Brent & Jo were so nice and tidy. They finished right on time too. Felt totally safe with them in my house. 5 stars!&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Belinda, Bribie Island</footer>
-          </blockquote>
-          <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;Top notch job on our deck!! These guys know their stuff. On time, professional, and boy do they pay attention to the little things. Couldn&apos;t be happier.&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Gary, Bribie</footer>
-          </blockquote>
-          <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;Got these folks for some odd jobs around the house. They were quick, knew exactly what to do, and didn&apos;t leave a mess. No complaints here!&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Sam, Deception Bay</footer>
-          </blockquote>
-          <blockquote className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
-            <p className="text-gray-600 italic">&quot;Just had my whole house painted inside. It looks fab! The team was great - always on time and kept me in the loop. House was spotless when they finished. Thumbs up from me!&quot;</p>
-            <footer className="text-gray-800 font-semibold">- Brett, Caboolture</footer>
-          </blockquote>
+          {testimonials.map((testimonial, index) => (
+            <blockquote key={index} className="bg-gray-200 p-6 rounded-lg shadow flex flex-col justify-between gap-4">
+              <p className="text-gray-600 italic">&quot;{testimonial.review}&quot;</p>
+              <footer className="text-gray-800 font-semibold">- {testimonial.author}, {testimonial.authorLocation}</footer>
+            </blockquote>
+          ))}
         </div>
       </section>
 
