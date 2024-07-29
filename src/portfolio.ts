@@ -46,5 +46,17 @@ export const portfolio = [
       description: "Transformation of a bare concrete patio into a beautiful wooden deck, enhancing the outdoor living space and adding warmth to the area.",
       beforeSrc: "/h1.jpg",
       afterSrc: "/h2.jpg"
+    },
+    {
+      title: "Bathroom Remodel",
+      description: "Comprehensive bathroom renovation, replacing old fixtures with a modern bathtub, shower enclosure, and tiling for a fresh, updated look.",
+      beforeSrc: "/i1.jpg",
+      afterSrc: "/i2.jpg"
+    },
+    {
+      title: "Garden Fence and Landscaping",
+      description: "Installation of a new garden fence along with landscaping work, creating a private and aesthetically pleasing outdoor space.",
+      beforeSrc: "/j1.jpg",
+      afterSrc: "/j2.jpg"
     }
   ];
