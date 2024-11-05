@@ -58,5 +58,11 @@ export const portfolio = [
       description: "Installation of a new garden fence along with landscaping work, creating a private and aesthetically pleasing outdoor space.",
       beforeSrc: "/j1.jpg",
       afterSrc: "/j2.jpg"
+    },
+    {
+        title: "Bathroom Overhaul",
+        description: "Complete overhaul of an outdated bathroom, including old fixtures with a modern bathtub.",
+        beforeSrc: "/k1.jpg",
+        afterSrc: "/k2.jpg"
     }
   ];
