@@ -62,7 +62,19 @@ export const portfolio = [
     {
         title: "Bathroom Overhaul",
         description: "Complete overhaul of an outdated bathroom, including old fixtures with a modern bathtub.",
-        beforeSrc: "/k1.jpg",
+        beforeSrc: "/l1.jpg",
         afterSrc: "/k2.jpg"
+    },
+    {
+      title: "Toilet Overhaul",
+      description: "Complete overhaul of a toilet room.",
+      beforeSrc: "/l1.jpg",
+      afterSrc: "/l2.jpg"
+    },
+    {
+      title: "Fence Replacement",
+      description: "Removal and installation of a brand new, modern and private fence.",
+      beforeSrc: "/m1.jpg",
+      afterSrc: "/m2.jpg"
     }
   ];
