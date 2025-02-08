@@ -8,35 +8,34 @@ export default function Page() {
   return (
     <>
       <div className="hero bg-[url('/collective.jpg')] bg-cover bg-center relative text-center rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-md"></div>
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-md" />
 
-        <div className="hero-content py-12 md:py-24 flex flex-col items-center max-w-xl mx-auto relative text-white px-4">
+        <div className="hero-content py-12 md:py-18 flex flex-col items-center max-w-xl mx-auto relative text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             North Brisbane Maintenance
           </h1>
-          <p className="text-xl md:text-2xl mb-6">
+          <p className="text-xl md:text-2xl mb-4">
             Professional Handyman Services
           </p>
-          <Link href="tel:0490407790" className="btn btn-primary gap-2 text-lg">
+          <Link
+            href="tel:0490407790"
+            className="btn btn-primary gap-2 text-lg mb-4"
+          >
             <Phone size={24} />
             0490 407 790
           </Link>
-        </div>
-      </div>
 
-      <section id="services">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
-        <div className="bg-base-100 p-6 rounded-lg shadow-sm">
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 list-inside list-disc text-base-content">
-            <li className="leading-6">Deck building and staining</li>
-            <li className="leading-6">Staircase rebuilding</li>
-            <li className="leading-6">Paver laying</li>
-            <li className="leading-6">General carpentry</li>
-            <li className="leading-6">Bathrooms</li>
-            <li className="leading-6">Fencing and pitching</li>
+          <ul className="flex flex-wrap justify-center gap-4">
+            <li>Deck building</li>
+            <li>Deck staining</li>
+            <li>Staircase rebuilding</li>
+            <li>Paver laying</li>
+            <li>General carpentry</li>
+            <li>Bathrooms</li>
+            <li>Fencing and Pitching</li>
           </ul>
         </div>
-      </section>
+      </div>
 
       <section id="about">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">About Us</h2>
