@@ -16,7 +16,7 @@ const BeforeAfter: React.FC<BeforeAfterProps> = ({
   afterSrc,
 }) => {
   return (
-    <div className="card card-bordered shadow-sm mb-12">
+    <div className="card card-bordered bg-base-100 shadow-sm mb-12">
       <div className="card-body">
         <h3 className="card-title text-xl font-semibold">{title}</h3>
         <p className="text-base-content">{description}</p>
