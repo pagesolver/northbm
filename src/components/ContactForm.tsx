@@ -76,7 +76,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="btn btn-primary"
+        className="btn btn-primary text-lg"
       >
         Submit
       </button>
