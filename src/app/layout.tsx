@@ -1,32 +1,35 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "North Brisbane Maintenance - Handyman Services",
-  description: "Professional handyman services in North Brisbane and Bribie Island. Expert in deck building, staircase repair, paver laying, and general carpentry. Call Brent at 0490 407 790 for quality work.",
-  keywords: "handyman, North Brisbane, Bribie Island, deck building, carpentry, home maintenance, repair services",
+  description:
+    "Professional handyman services in North Brisbane and Bribie Island. Expert in deck building, staircase repair, paver laying, and general carpentry. Call Brent at 0490 407 790 for quality work.",
+  keywords:
+    "handyman, North Brisbane, Bribie Island, deck building, carpentry, home maintenance, repair services",
   openGraph: {
     url: "https://northbrisbanemaintenance.com.au",
     title: "North Brisbane Maintenance - Handyman Services",
-    description: "Quality handyman services in North Brisbane and Bribie Island. Deck building, repairs, and more.",
+    description:
+      "Quality handyman services in North Brisbane and Bribie Island. Deck building, repairs, and more.",
     images: [
       {
-        url: 'https://northbrisbanemaintenance.com.au/nbmhs-crop.jpg',
+        url: "https://northbrisbanemaintenance.com.au/nbmhs-crop.jpg",
         width: 800,
         height: 600,
-        alt: 'North Brisbane Maintenance Logo',
-      }
+        alt: "North Brisbane Maintenance Logo",
+      },
     ],
-    siteName: "North Brisbane Maintenance"
+    siteName: "North Brisbane Maintenance",
   },
   twitter: {
-    card: 'summary_large_image'
-  }
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
@@ -36,13 +39,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        
-      </head>
+      <head></head>
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-100 flex flex-col">
-          <Header />
-          <main className="max-w-screen-xl container py-6 flex-grow">{children}</main>
+          <Navbar />
+          <main className="max-w-(--breakpoint-xl) container py-6 space-y-12 grow">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>
