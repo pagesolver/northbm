@@ -3,12 +3,13 @@ import { Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { testimonials } from "@/testimonials";
+import Reviews from "@/components/Reviews";
 
 export default function Page() {
   return (
     <>
-      <div className="hero bg-[url('/collective.jpg')] bg-cover bg-center relative text-center rounded-lg overflow-hidden">
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-md" />
+      <div className="hero bg-[url('/collective.jpg')] text-center rounded-lg overflow-hidden">
+        <div className="hero-overlay bg-black/70"></div>
 
         <div className="hero-content py-12 md:py-18 flex flex-col items-center max-w-xl mx-auto relative text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -36,6 +37,8 @@ export default function Page() {
           </ul>
         </div>
       </div>
+
+      <Reviews />
 
       <section id="about">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">About Us</h2>
