@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "North Brisbane Maintenance - Handyman Services",
   description:
-    "Professional handyman services in North Brisbane and Bribie Island. Expert in deck building, staircase repair, paver laying, and general carpentry. Call Brent at 0490 407 790 for quality work.",
+    "Professional handyman services in North Brisbane and Bribie Island. Expert in deck building, staircase repair, paver laying, and general carpentry.",
   keywords:
     "handyman, North Brisbane, Bribie Island, deck building, carpentry, home maintenance, repair services",
   openGraph: {
