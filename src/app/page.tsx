@@ -8,8 +8,8 @@ import Reviews from "@/components/Reviews";
 export default function Page() {
   return (
     <>
-      <div className="hero bg-[url('/collective.jpg')] text-center rounded-lg overflow-hidden">
-        <div className="hero-overlay bg-black/70"></div>
+      <div className="hero bg-[url('/collective-blur.jpg')] text-center rounded-lg overflow-hidden shadow-sm border-2 border-base-100">
+        <div className="hero-overlay bg-black/60"></div>
 
         <div className="hero-content py-12 md:py-18 flex flex-col items-center max-w-xl mx-auto relative text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -70,7 +70,7 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div className="relative w-full pt-[75%] rounded-lg overflow-hidden">
+            <div className="relative w-full pt-[75%] rounded-lg overflow-hidden shadow-sm border-2 border-base-100">
               <Image
                 src="/brent.jpg"
                 alt="Brent"
@@ -78,10 +78,10 @@ export default function Page() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full pt-[75%] rounded-lg overflow-hidden">
+            <div className="relative w-full pt-[75%] rounded-lg overflow-hidden shadow-sm border-2 border-base-100">
               <Image src="/jo.jpg" alt="Jo" fill className="object-cover" />
             </div>
-            <div className="relative w-full pt-[50%] col-span-2 rounded-lg overflow-hidden">
+            <div className="relative w-full pt-[50%] col-span-2 rounded-lg overflow-hidden shadow-sm border-2 border-base-100">
               <Image
                 src="/collective.jpg"
                 alt="Brent and Jo"
@@ -93,6 +93,7 @@ export default function Page() {
         </div>
       </section>
 
+      {/* REMOVE @ 5+ REVIEWS */}
       <section id="testimonials">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           What Our Clients Say

@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="min-h-screen bg-gray-100 flex flex-col">
           <Navbar />
-          <main className="max-w-(--breakpoint-xl) container py-6 space-y-12 grow">
+          <main className="max-w-(--breakpoint-xl) container py-6 space-y-12">
             {children}
           </main>
           <Footer />
@@ -52,55 +52,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-/**<LocalBusinessJsonLd
-          type="HomeAndConstructionBusiness"
-          id="https://northbrisbanemaintenance.com.au"
-          name="North Brisbane Maintenance"
-          description="Professional handyman services in North Brisbane and Bribie Island"
-          url="https://northbrisbanemaintenance.com.au"
-          telephone="0490 407 790"
-          areaServed={[
-            {
-              "@type": "City",
-              "name": "Bracken Ridge"
-            },
-            {
-              "@type": "City",
-              "name": "Lawnton"
-            },
-            {
-              "@type": "City",
-              "name": "Redcliffe"
-            },
-            {
-              "@type": "City",
-              "name": "North Lakes"
-            },
-            {
-              "@type": "City",
-              "name": "Burpengary"
-            },
-            {
-              "@type": "City",
-              "name": "Caboolture"
-            },
-            {
-              "@type": "City",
-              "name": "Bribie Island"
-            },
-            {
-              "@type": "AdministrativeArea",
-              "name": "Moreton Bay Region"
-            }
-          ]}
-          geo={{
-            latitude: "-27.0587",
-            longitude: "152.9530",
-          }}
-          images={[
-            "https://northbrisbanemaintenance.com.au/nbmhs-crop-removebg-preview.png"
-          ]}
-          sameAs={[
-            "https://www.facebook.com/profile.php?id=61558880364156"
-          ]} address={undefined} /> */
