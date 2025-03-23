@@ -76,5 +76,17 @@ export const portfolio = [
       description: "Removal and installation of a brand new, modern and private fence.",
       beforeSrc: "/m1.jpg",
       afterSrc: "/m2.jpg"
+    },
+    {
+      title: "Deck Varnishing Project",
+      description: "Restoration of a weathered wooden deck with professional sanding and varnishing, bringing back its natural beauty and protection.",
+      beforeSrc: "/n1.jpg",
+      afterSrc: "/n2.jpg"
+    },
+    {
+      title: "Outdoor Deck Refinishing",
+      description: "Complete refinishing of an aged deck with premium varnish, enhancing the wood grain and providing long-lasting protection against the elements.",
+      beforeSrc: "/o1.jpg",
+      afterSrc: "/o2.jpg"
     }
   ];
