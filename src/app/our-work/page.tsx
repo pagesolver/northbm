@@ -63,7 +63,6 @@ export default async function Page() {
   }
 
   const comparisonData: ComparisonResponse = await comparisonResponse.json();
-  console.log(comparisonData)
 
   return (
     <>
