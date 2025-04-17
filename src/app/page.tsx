@@ -28,8 +28,8 @@ export default function Page() {
                 <Phone size={20} />
                 0490 407 790
               </Link>
-              <Link href="/our-work" className="btn btn-outline btn-lg gap-2">
-                View Our Work
+              <Link href="/portfolio" className="btn btn-outline btn-lg gap-2">
+                View Portfolio
                 <ArrowRight size={18} />
               </Link>
             </div>
