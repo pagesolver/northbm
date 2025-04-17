@@ -36,9 +36,22 @@ export function BeforeAfterSlider({
     setSliderPosition(Math.min(Math.max(position, 0), 100));
   };
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!containerRef.current) return;
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    isDragging.current = true;
+    // Prevent default to stop scrolling while sliding
+    e.preventDefault();
+  };
 
+  const handleTouchEnd = () => {
+    isDragging.current = false;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging.current || !containerRef.current) return;
+
+    // Prevent default to stop scrolling while sliding
+    e.preventDefault();
+    
     const containerRect = containerRef.current.getBoundingClientRect();
     const position = ((e.touches[0].clientX - containerRect.left) / containerRect.width) * 100;
     setSliderPosition(Math.min(Math.max(position, 0), 100));
@@ -52,6 +65,8 @@ export function BeforeAfterSlider({
       onTouchMove={handleTouchMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <div className="absolute inset-0">
         <Image
