@@ -1,6 +1,6 @@
 export const testimonials = [
     {
-      review: "Wow! My bathroom looks amazing now. Brent & Jo were so nice and tidy. They finished right on time too. Felt totally safe with them in my house.",
+      review: "My bathroom looks amazing now! Brent & Jo were so nice and tidy. They finished right on time too. Felt totally safe with them in my house.",
       author: "Belinda",
       authorLocation: "Bribie Island"
     },
