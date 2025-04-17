@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="bg-base-100 shadow-sm">
-      <div className="navbar container">
+      <div className="navbar max-w-(--breakpoint-xl) container">
         <div className="navbar-start max-lg:gap-2">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,20 +19,21 @@ export default function Navbar() {
                 <Link href="/">About</Link>
               </li>
               <li>
-                <Link href="/our-work">Portfolio</Link>
+                <Link href="/portfolio">Portfolio</Link>
               </li>
               <li>
                 <Link href="/#contact">Contact</Link>
               </li>
             </ul>
           </div>
-          <Image
+          <Link href="/"><Image
             src="/nbmhs-crop-removebg-preview.png"
             alt="North Brisbane Maintenance Logo"
             width={200}
             height={50}
             className="object-contain"
-          />
+          /></Link>
+          
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-lg menu-horizontal px-1">
@@ -40,7 +41,7 @@ export default function Navbar() {
               <Link href="/">About</Link>
             </li>
             <li>
-              <Link href="/our-work">Portfolio</Link>
+              <Link href="/portfolio">Portfolio</Link>
             </li>
             <li>
               <Link href="/#contact">Contact</Link>
