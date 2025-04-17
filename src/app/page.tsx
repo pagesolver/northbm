@@ -37,7 +37,7 @@ export default function Page() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-6 text-sm font-medium">
               {["Deck building", "Deck staining", "Staircase rebuilding", "Paver laying", "General carpentry", "Bathrooms"].map((service, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <CheckCircle size={16} className="text-primary" />
+                  <CheckCircle size={16} className="text-primary shrink-0" />
                   <span>{service}</span>
                 </div>
               ))}
