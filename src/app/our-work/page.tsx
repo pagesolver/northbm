@@ -56,7 +56,11 @@ function ComparisonCard({comparison}: {comparison: Comparison}) {
 }
 
 export default async function Page() {
-  const comparisonResponse = await fetch('https://pagesolver.com/api/northbm/comparisons');
+  const comparisonResponse = await fetch('https://pagesolver.com/api/northbm/comparisons', { 
+    next: { 
+      revalidate: 600
+    } 
+  });
 
   if (!comparisonResponse.ok) {
     throw new Error('Failed to fetch portfolio data');
