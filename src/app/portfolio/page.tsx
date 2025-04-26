@@ -53,8 +53,6 @@ export default async function Page() {
     }
   );
 
-  console.log(comparisonResponse)
-
   if (!comparisonResponse.ok) {
     throw new Error("Failed to fetch portfolio data");
   }
