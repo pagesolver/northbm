@@ -42,13 +42,18 @@ function ComparisonCard({ comparison }: { comparison: Comparison }) {
 
 export default async function Page() {
   const comparisonResponse = await fetch(
-    "https://pagesolver.com/api/northbm/comparisons",
+    "https://pagesolver.com/api/business/comparisons",
     {
+      headers: {
+        "x-business-key": process.env.PAGESOLVER_API_KEY!
+      },
       next: {
         revalidate: 600,
       },
     }
   );
+
+  console.log(comparisonResponse)
 
   if (!comparisonResponse.ok) {
     throw new Error("Failed to fetch portfolio data");
