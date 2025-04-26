@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import { Phone, ArrowRight, CheckCircle, Star, MessageCircle } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle, Star } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { testimonials } from "@/testimonials";
