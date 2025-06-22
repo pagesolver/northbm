@@ -1,21 +1,8 @@
 import Link from "next/link";
-
-interface Comparison {
-  title: string;
-  description?: string;
-  business_id: string;
-  before_url: string;
-  after_url: string;
-  created_at: string;
-}
-
-interface ComparisonResponse {
-  comparisons: Comparison[];
-}
-
+import { PageSolverClient, ComparisonImage } from "@pagesolver/sdk";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
-function ComparisonCard({ comparison }: { comparison: Comparison }) {
+function ComparisonCard({ comparison }: { comparison: ComparisonImage }) {
   return (
     <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
       <div className="card-body p-4">
@@ -23,8 +10,8 @@ function ComparisonCard({ comparison }: { comparison: Comparison }) {
 
         <div className="relative aspect-[4/3] w-full mb-3 mt-2 overflow-hidden rounded-lg">
           <BeforeAfterSlider
-            beforeImage={comparison.before_url}
-            afterImage={comparison.after_url}
+            beforeImage={comparison.beforeUrl}
+            afterImage={comparison.afterUrl}
             beforeAlt={`${comparison.title} - Before`}
             afterAlt={`${comparison.title} - After`}
           />
@@ -41,23 +28,17 @@ function ComparisonCard({ comparison }: { comparison: Comparison }) {
 }
 
 export default async function Page() {
-  const comparisonResponse = await fetch(
-    "https://pagesolver.com/api/business/comparisons",
-    {
-      headers: {
-        "x-business-key": process.env.PAGESOLVER_API_KEY!
-      },
-      next: {
-        revalidate: 600,
-      },
-    }
-  );
+  const client = new PageSolverClient(process.env.PAGESOLVER_API_KEY!);
 
-  if (!comparisonResponse.ok) {
-    throw new Error("Failed to fetch portfolio data");
+  const comparisonResponse = await client.getComparisons();
+
+  if (comparisonResponse.error || !comparisonResponse.data) {
+    throw new Error(
+      comparisonResponse.error || "Failed to fetch portfolio data"
+    );
   }
 
-  const comparisonData: ComparisonResponse = await comparisonResponse.json();
+  const { comparisons } = comparisonResponse.data;
 
   return (
     <div className="container mx-auto px-4 py-6">
@@ -74,7 +55,7 @@ export default async function Page() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {comparisonData.comparisons.map((comparison, index) => (
+        {comparisons.map((comparison: ComparisonImage, index: number) => (
           <ComparisonCard key={index} comparison={comparison} />
         ))}
       </div>

@@ -5,6 +5,7 @@
       "name": "nbmhs",
       "dependencies": {
         "@hookform/resolvers": "^5.0.1",
+        "@pagesolver/sdk": "^1.0.6",
         "lucide-react": "^0.400.0",
         "next": "15.1.6",
         "next-seo": "^6.5.0",
@@ -168,6 +169,8 @@
     "@nodelib/fs.stat": ["@nodelib/fs.stat@2.0.5", "", {}, "sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A=="],
 
     "@nodelib/fs.walk": ["@nodelib/fs.walk@1.2.8", "", { "dependencies": { "@nodelib/fs.scandir": "2.1.5", "fastq": "^1.6.0" } }, "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg=="],
+
+    "@pagesolver/sdk": ["@pagesolver/sdk@1.0.6", "", { "peerDependencies": { "typescript": ">=4.0.0" } }, "sha512-PblEStXEaxTDLN9qvU75O/F6LYTtk60MwjzQ42oKAl4IkDDfoSxU+dwAr6jNDuXPfJZpQRxSjuftlEEho4YoAQ=="],
 
     "@rtsao/scc": ["@rtsao/scc@1.1.0", "", {}, "sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g=="],
 
