@@ -27,18 +27,11 @@ function ComparisonCard({ comparison }: { comparison: ComparisonImage }) {
   );
 }
 
+export const revalidate = 600;
+
 export default async function Page() {
   const client = new PageSolverClient(process.env.PAGESOLVER_API_KEY!);
-
-  const comparisonResponse = await client.getComparisons();
-
-  if (comparisonResponse.error || !comparisonResponse.data) {
-    throw new Error(
-      comparisonResponse.error || "Failed to fetch portfolio data"
-    );
-  }
-
-  const { comparisons } = comparisonResponse.data;
+  const comparisons = await client.getComparisons();
 
   return (
     <div className="container mx-auto px-4 py-6">
