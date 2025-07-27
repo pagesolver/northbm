@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
-    "@pagesolver/sdk": "^1.1.0",
+    "@pagesolver/sdk": "^1.2.1",
     "lucide-react": "^0.400.0",
     "next": "15.1.6",
     "next-seo": "^6.5.0",

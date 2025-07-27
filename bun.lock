@@ -5,7 +5,7 @@
       "name": "nbmhs",
       "dependencies": {
         "@hookform/resolvers": "^5.0.1",
-        "@pagesolver/sdk": "^1.1.0",
+        "@pagesolver/sdk": "^1.2.1",
         "lucide-react": "^0.400.0",
         "next": "15.1.6",
         "next-seo": "^6.5.0",
@@ -170,7 +170,7 @@
 
     "@nodelib/fs.walk": ["@nodelib/fs.walk@1.2.8", "", { "dependencies": { "@nodelib/fs.scandir": "2.1.5", "fastq": "^1.6.0" } }, "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg=="],
 
-    "@pagesolver/sdk": ["@pagesolver/sdk@1.1.0", "", { "peerDependencies": { "typescript": ">=4.0.0" } }, "sha512-9YtE0Bvm0Ce6m8dVg5ZdD/pn9Jaq65jwRQqEaH5Xau2g1uaLLRIK23GzTZFVC7A1rfCSgEOvaOeJ9k7JcFEbDw=="],
+    "@pagesolver/sdk": ["@pagesolver/sdk@1.2.1", "", { "peerDependencies": { "typescript": ">=4.0.0" } }, "sha512-rwgAtRCOLxmqAm09z9ZNnKTXYJgOs9rMieN5oQ1WKHxtH08AbJ1MhJTxAhFlhduY8Id+GxeFM4QyLlUk5MK+tw=="],
 
     "@rtsao/scc": ["@rtsao/scc@1.1.0", "", {}, "sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g=="],
 
