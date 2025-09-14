@@ -10,8 +10,8 @@ function ComparisonCard({ comparison }: { comparison: ComparisonImage }) {
 
         <div className="relative aspect-[4/3] w-full mb-3 mt-2 overflow-hidden rounded-lg">
           <BeforeAfterSlider
-            beforeImage={comparison.beforeUrl}
-            afterImage={comparison.afterUrl}
+            beforeImage={comparison.before_url}
+            afterImage={comparison.after_url}
             beforeAlt={`${comparison.title} - Before`}
             afterAlt={`${comparison.title} - After`}
           />

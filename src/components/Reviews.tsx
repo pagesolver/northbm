@@ -1,13 +1,32 @@
-"use client";
+import { PageSolverClient } from "@pagesolver/sdk";
+import ReviewsClient from "./ReviewsClient";
 
-import { ReactGoogleReviews } from "react-google-reviews";
-import "react-google-reviews/dist/index.css";
+export const revalidate = 3600; // Revalidate every hour
 
-export default function Reviews() {
-  return (
-    <ReactGoogleReviews
-      layout="carousel"
-      featurableId="91d15ced-3f55-450c-8f91-6aec0519a062"
-    />
-  );
+export default async function Reviews() {
+  try {
+    const client = new PageSolverClient(process.env.PAGESOLVER_API_KEY!);
+    const reviewsResponse = await client.getGoogleReviews();
+
+    if (!reviewsResponse.reviews || reviewsResponse.reviews.length === 0) {
+      return (
+        <div className="text-center py-8">
+          <p className="text-base-content/60">
+            No reviews available at the moment.
+          </p>
+        </div>
+      );
+    }
+
+    return <ReviewsClient reviews={reviewsResponse.reviews} />;
+  } catch (error) {
+    console.error("Error fetching reviews:", error);
+    return (
+      <div className="text-center py-8">
+        <p className="text-base-content/60">
+          Unable to load reviews at the moment. Please try again later.
+        </p>
+      </div>
+    );
+  }
 }

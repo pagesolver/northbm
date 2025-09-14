@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
-    "@pagesolver/sdk": "^1.2.1",
+    "@pagesolver/sdk": "^1.3.0",
     "lucide-react": "^0.400.0",
     "next": "15.1.6",
     "next-seo": "^6.5.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-google-reviews": "^1.7.4",
+    "react-fast-marquee": "^1.6.5",
     "react-hook-form": "^7.56.1",
     "zod": "^3.24.3"
   },
